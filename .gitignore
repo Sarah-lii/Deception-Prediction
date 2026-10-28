@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated experiment inputs and outputs are not versioned.
+datasets/
+outputs/
+results/
+artifacts/
+checkpoints/
+models/
+logs/
+*.csv
+*.jsonl
+*.npz
+*.npy
+*.pt
+*.pth
+*.safetensors
+*.log
+*.tgz
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.docx
+
+# AM5000 JSON files under data/am5000 are the only released dataset files.
+data/*
+!data/am5000/
+!data/am5000/*.json
+!data/am5000/README.md

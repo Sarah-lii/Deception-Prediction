@@ -1,0 +1,54 @@
+{
+  "dataset": "AM5000",
+  "version": "1.0",
+  "total_tasks": 5000,
+  "task_types": 5,
+  "tasks_per_type": 1000,
+  "files": [
+    {
+      "path": "task_1.json",
+      "bytes": 597198,
+      "records": 1000,
+      "task_type": 1,
+      "min_task_index": 100000,
+      "max_task_index": 100999,
+      "sha256": "bff918690a4fa5e59dafc2da44eb298c0dbf87d4463a37abec176e35f251ffa0"
+    },
+    {
+      "path": "task_2.json",
+      "bytes": 735929,
+      "records": 1000,
+      "task_type": 2,
+      "min_task_index": 200000,
+      "max_task_index": 200999,
+      "sha256": "9403e3a030e2d5281cf5269c9241819cf45107ea78d68ce50e971e6aaec2907b"
+    },
+    {
+      "path": "task_3.json",
+      "bytes": 860610,
+      "records": 1000,
+      "task_type": 3,
+      "min_task_index": 300000,
+      "max_task_index": 300999,
+      "sha256": "efa3dd902c1e581a546791560ee7e6e6865408c06fc0a5ef4091839d5ed2a984"
+    },
+    {
+      "path": "task_4.json",
+      "bytes": 583664,
+      "records": 1000,
+      "task_type": 4,
+      "min_task_index": 400000,
+      "max_task_index": 400999,
+      "sha256": "f5990d63eceb1bddf24f1b5952d53c0491a8fa017d4c676c0ab2689bcb6343e3"
+    },
+    {
+      "path": "task_5.json",
+      "bytes": 855410,
+      "records": 1000,
+      "task_type": 5,
+      "min_task_index": 500000,
+      "max_task_index": 500999,
+      "sha256": "8dad55bbce344bcc60cb44d56cab96bc90d4ce7d4a9eb078257750bcca4ecf34"
+    }
+  ]
+}

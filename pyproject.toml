@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deception-prediction"
+version = "0.1.0"
+description = "Pre-decision deception detection and activation steering for tool-using agents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "requests>=2.31",
+  "torch>=2.2",
+]
+
+[project.optional-dependencies]
+server = [
+  "fastapi>=0.110",
+  "transformers>=4.51",
+  "uvicorn>=0.29",
+]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

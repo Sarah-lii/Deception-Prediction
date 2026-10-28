@@ -1,0 +1,36 @@
+{
+  "model": {
+    "name": "Qwen3-14B-Instruct",
+    "decoder_layers": 40,
+    "hidden_size": 5120,
+    "max_agent_steps": 32
+  },
+  "split": {
+    "train_total": 1500,
+    "test_total": 500,
+    "seed": 20260819
+  },
+  "detector": {
+    "windows": ["t", "t-1", "t-2", "t-3", "t-4", "t-5", "t-6", "t-7"],
+    "latent_dim": 300,
+    "pooling": "mean",
+    "d_model": 192,
+    "heads": 4,
+    "depth": 2,
+    "dropout": 0.05,
+    "batch_each": 64,
+    "steps_per_epoch": 30,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 50
+  },
+  "intervention": {
+    "gate_window": "t",
+    "direction_window": "t-2",
+    "alpha": 2.0,
+    "token_policy": "current_last_token",
+    "layer_policy": "all_decoder_layers"
+  },
+  "labels": ["honest", "dishonest", "invalid"]
+}
+
