@@ -1,6 +1,6 @@
 {
   "model": {
-    "name": "Qwen3-14B-Instruct",
+    "name": "Qwen3-14B",
     "decoder_layers": 40,
     "hidden_size": 5120,
     "max_agent_steps": 32
@@ -8,6 +8,7 @@
   "split": {
     "train_total": 1500,
     "test_total": 500,
+    "validation_policy": "all remaining eligible cases",
     "seed": 20260819
   },
   "detector": {
@@ -33,4 +34,3 @@
   },
   "labels": ["honest", "dishonest", "invalid"]
 }
-

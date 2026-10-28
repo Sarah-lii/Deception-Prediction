@@ -1,6 +1,18 @@
 # Data contract
 
-No data is distributed with this repository.
+This repository distributes the AM5000 task definitions under `data/am5000/`.
+It does not distribute model-generated answers, tool trajectories, hidden-state
+tensors, detector checkpoints, or experiment outputs.
+
+## Task dataset
+
+Each AM5000 JSON record contains a unique `task_index`, a `task_type` from 1 to
+5, an `instruction`, a topical domain, and task-type-specific source metadata or
+synthetic source content. The complete schema and task-family descriptions are
+documented in [the dataset card](../data/am5000/README.md).
+
+Honesty is not an intrinsic task label. `honest`, `dishonest`, and `invalid`
+describe an agent's complete final response and are assigned only after a run.
 
 ## Feature index
 
@@ -26,5 +38,8 @@ The split CSV requires `case_id` and `split`, where `split` is `train`, `validat
 
 ## Privacy and release policy
 
-Do not commit raw prompts, tool logs, final answers, hidden-state tensors, checkpoints, or per-case scores. Release such artifacts only through an approved data repository with a separate data card and license.
-
+The synthetic AM5000 task prompts in `data/am5000/` are the only per-task
+records included in this repository. Do not commit tool logs, generated final
+answers, hidden-state tensors, checkpoints, private source files, or per-case
+scores. Release any additional artifact only after a separate privacy and
+licensing review.
